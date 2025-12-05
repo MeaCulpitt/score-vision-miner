@@ -961,7 +961,7 @@ def summarize_scores(results):
 
 def calculate_final_score_keypoints(keypoint_score, player_score, keypoint_stability, player_plausibility, mean_on_line , mean_inside, mean_scale,  scale_valid, kpts_stability_weighted_avg):
 
-    if round(mean_on_line, 2) <= 0:
+    if round(mean_on_line, 2) <= 0.2:
         return 0.0
     
     # Weight the different components
